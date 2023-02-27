@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Manual CSS input starts here: */
+
+
+*{
+	border: solid 1px;	
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading{
+	display: flex;
+	justify-content: center;
+	height: 10vh;
+	align-items: center;
+	
+}
+
+#content div{
+	display: flex;
+	align-content: flex-start;
+}
+
+#button{
+	justify-content: center;
+	background-color: orange;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	transition-duration: 0.4s;
+}
+
+/* #button:hover {
+	background-color: white;
+	color: orange;
+} */
+
+#button:active {
+	background-color: orangered;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.headingitem{
+	margin: 10px;
+}
+
+#grid{
+	display: grid;
+	background-color: gray;
+	grid-template-columns: repeat(5, auto);
+	grid-template-rows: repeat(5, auto);
+	width: 80vh;
+	/* height: 80vh; */
+	margin: auto;
+	/* justify-content: center; */
+	border: 1px solid;
+
+}
+
+.gridbox{
+	aspect-ratio: 1; 
+	border: 1px solid;
+}
+
+#color{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	align-items: center;
+}
+
+.coloritem{
+	padding: 10px;
+}
+
